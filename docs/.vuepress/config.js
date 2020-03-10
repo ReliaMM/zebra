@@ -4,7 +4,6 @@ module.exports = {
     title: '大斑马的小屋',
     description: '大斑马的小屋',
     dest: 'dist',
-    base: '/zebra/',
     themeConfig: {
         docsDir: "docs",
         logo: '/assets/img/zebra-3.png',

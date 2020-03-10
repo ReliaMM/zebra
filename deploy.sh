@@ -19,4 +19,5 @@ git commit -m 'deploy'
 # 如果使用 travis 持续集成
 
 git push -f git@github.com:ReliaMM/zebra-c.github.io.git master:gh-pages
+
 cd -
