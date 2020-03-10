@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>五个 JavaScript 小技巧 | 大斑马的小屋</title>
+    <meta name="description" content="大斑马的小屋">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/zebra/assets/css/0.styles.70b966b2.css" as="style"><link rel="preload" href="/zebra/assets/js/app.34ae22a4.js" as="script"><link rel="preload" href="/zebra/assets/js/2.c6624801.js" as="script"><link rel="preload" href="/zebra/assets/js/9.a544c69d.js" as="script"><link rel="prefetch" href="/zebra/assets/js/10.0ed91c18.js"><link rel="prefetch" href="/zebra/assets/js/11.3ad5732c.js"><link rel="prefetch" href="/zebra/assets/js/12.a83928e4.js"><link rel="prefetch" href="/zebra/assets/js/13.c0a21f7f.js"><link rel="prefetch" href="/zebra/assets/js/14.1b9602a4.js"><link rel="prefetch" href="/zebra/assets/js/15.abe7bccd.js"><link rel="prefetch" href="/zebra/assets/js/3.6cf60747.js"><link rel="prefetch" href="/zebra/assets/js/4.2b2cd21e.js"><link rel="prefetch" href="/zebra/assets/js/5.25e441f8.js"><link rel="prefetch" href="/zebra/assets/js/6.6e72e674.js"><link rel="prefetch" href="/zebra/assets/js/7.8a59eeab.js"><link rel="prefetch" href="/zebra/assets/js/8.aea4707f.js">
+    <link rel="stylesheet" href="/zebra/assets/css/0.styles.70b966b2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zebra/" class="home-link router-link-active"><img src="/zebra/assets/img/zebra-3.png" alt="大斑马的小屋" class="logo"> <span class="site-name can-hide">大斑马的小屋</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zebra/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享小屋" class="dropdown-title"><span class="title">分享小屋</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zebra/share/vue/Vuex 原理.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/js/五个 JavaScript 小技巧.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/browser/浏览器缓存之强缓存与协商缓存.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/security/最基础的 Web 安全问题.html" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/monitor/基于 CentOS 7 搭建异常监控 Sentry.html" class="nav-link">
+  前端监控
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zebra/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分享小屋" class="dropdown-title"><span class="title">分享小屋</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zebra/share/vue/Vuex 原理.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/js/五个 JavaScript 小技巧.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/browser/浏览器缓存之强缓存与协商缓存.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/security/最基础的 Web 安全问题.html" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/zebra/share/monitor/基于 CentOS 7 搭建异常监控 Sentry.html" class="nav-link">
+  前端监控
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zebra/share/js/五个 JavaScript 小技巧.html" class="active sidebar-link">五个 JavaScript 小技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zebra/share/js/五个 JavaScript 小技巧.html#_1-early-exits" class="sidebar-link">1. Early exits</a></li><li class="sidebar-sub-header"><a href="/zebra/share/js/五个 JavaScript 小技巧.html#_2-switch-to-object-literal" class="sidebar-link">2. Switch to object literal</a></li><li class="sidebar-sub-header"><a href="/zebra/share/js/五个 JavaScript 小技巧.html#_3-one-loop-two-arrays" class="sidebar-link">3. One loop two arrays</a></li><li class="sidebar-sub-header"><a href="/zebra/share/js/五个 JavaScript 小技巧.html#_4-no-foo-variables" class="sidebar-link">4. No 'foo' variables</a></li><li class="sidebar-sub-header"><a href="/zebra/share/js/五个 JavaScript 小技巧.html#_5-nested-ternaries-嵌套三元组" class="sidebar-link">5. Nested ternaries 嵌套三元组</a></li></ul></li><li><a href="/zebra/share/js/幸福小技巧.html" class="sidebar-link">幸福小技巧</a></li><li><a href="/zebra/share/js/JS条件语句.html" class="sidebar-link">JS条件语句</a></li><li><a href="/zebra/share/js/JS引擎的执行机制 Event Loop.html" class="sidebar-link">JS引擎的执行机制 Event Loop</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="五个-javascript-小技巧"><a href="#五个-javascript-小技巧" class="header-anchor">#</a> 五个 JavaScript 小技巧</h1> <h2 id="_1-early-exits"><a href="#_1-early-exits" class="header-anchor">#</a> 1. Early exits</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">transformData</span><span class="token punctuation">(</span><span class="token parameter">rawData</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// check if no data</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>rawData<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// check for specific case</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>rawData<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// actual function code goes here</span>
+  <span class="token keyword">return</span> rawData<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>鼓励思考无效/边缘情况以及如何处理这些情况</li> <li>避免意外和不必要的代码处理意外用例</li> <li>在心理上允许我更清楚地处理每个用例</li> <li>这通常遵循自上而下的方法 - 无效情况 - &gt;小案例 - &gt;预期案例</li></ul> <h2 id="_2-switch-to-object-literal"><a href="#_2-switch-to-object-literal" class="header-anchor">#</a> 2. Switch to object literal</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// Switch</span>
+<span class="token keyword">let</span> createType <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span>contentType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> <span class="token string">&quot;post&quot;</span><span class="token operator">:</span>
+    <span class="token function-variable function">createType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;creating a post...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">case</span> <span class="token string">&quot;video&quot;</span><span class="token operator">:</span>
+    <span class="token function-variable function">createType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;creating a video...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">default</span><span class="token operator">:</span>
+    <span class="token function-variable function">createType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'unrecognized content type'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">createType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Object literal</span>
+<span class="token keyword">const</span> contentTypes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">post</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;creating a post...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">video</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;creatinga  video...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'unrecognized content type'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> createType <span class="token operator">=</span> contentTypes<span class="token punctuation">[</span>contentType<span class="token punctuation">]</span> <span class="token operator">||</span> contentTypes<span class="token punctuation">[</span><span class="token string">'default'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">createType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>不必担心case或break</li> <li>更容易阅读并快速了解正在发生的事情</li> <li>对象文字很容易写</li> <li>更少的代码</li></ul> <h2 id="_3-one-loop-two-arrays"><a href="#_3-one-loop-two-arrays" class="header-anchor">#</a> 3. One loop two arrays</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> exampleValues <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">[</span>truthyValues<span class="token punctuation">,</span> falseyValues<span class="token punctuation">]</span> <span class="token operator">=</span> exampleValues<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">arrays<span class="token punctuation">,</span> exampleValue</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>exampleValue <span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    arrays<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>exampleValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> arrays<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  arrays<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>exampleValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> arrays<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_4-no-foo-variables"><a href="#_4-no-foo-variables" class="header-anchor">#</a> 4. No 'foo' variables</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// bad</span>
+<span class="token keyword">const</span> foo <span class="token operator">=</span> y <span class="token operator">&amp;&amp;</span> z<span class="token punctuation">;</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> isPostEnabled <span class="token operator">=</span> isPost <span class="token operator">&amp;&amp;</span> postDateValid<span class="token punctuation">;</span>
+</code></pre></div><h2 id="_5-nested-ternaries-嵌套三元组"><a href="#_5-nested-ternaries-嵌套三元组" class="header-anchor">#</a> 5. Nested ternaries 嵌套三元组</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>conditionA<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>conditionB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> <span class="token string">&quot;A &amp; B&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    result <span class="token operator">=</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  result <span class="token operator">=</span> <span class="token string">&quot;Not A&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token operator">!</span>conditionA
+  <span class="token operator">?</span> <span class="token string">&quot;Not A&quot;</span>
+  <span class="token operator">:</span> conditionB
+  <span class="token operator">?</span> <span class="token string">&quot;A &amp; B&quot;</span>
+  <span class="token operator">:</span> <span class="token string">&quot;A&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p><a href="https://www.johnstewart.dev/five-programming-patterns-i-like/" target="_blank" rel="noopener noreferrer">五个 JavaScript 小技巧<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://www.30secondsofcode.org/" target="_blank" rel="noopener noreferrer">30secondsofcode<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// const exampleValues = [</span>
+<span class="token comment">//   {</span>
+<span class="token comment">//     id:1,</span>
+<span class="token comment">//     color: 'red'</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   {</span>
+<span class="token comment">//     id:2,</span>
+<span class="token comment">//     color: 'red'</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   {</span>
+<span class="token comment">//     id:3,</span>
+<span class="token comment">//     color: 'yellow'</span>
+<span class="token comment">//   },</span>
+<span class="token comment">//   {</span>
+<span class="token comment">//     id:4,</span>
+<span class="token comment">//     color: 'blue'</span>
+<span class="token comment">//   }</span>
+<span class="token comment">// ]</span>
+<span class="token comment">// const [truthyValues, falseyValues, trheee] = exampleValues.reduce((arrays, exampleValue) =&gt; {</span>
+<span class="token comment">//   if (exampleValue.color === 'red') {</span>
+<span class="token comment">//     arrays[0].push(exampleValue)</span>
+<span class="token comment">//   } else if  (exampleValue.color === 'blue') {</span>
+<span class="token comment">//     arrays[1].push(exampleValue)</span>
+<span class="token comment">//   } else if  (exampleValue.color === 'yellow') {</span>
+<span class="token comment">//     arrays[2].push(exampleValue)</span>
+<span class="token comment">//   }</span>
+<span class="token comment">//   return arrays;</span>
+<span class="token comment">// }, [[], [], []]);</span>
+
+<span class="token comment">// console.log(truthyValues)</span>
+<span class="token comment">// console.log(falseyValues)</span>
+<span class="token comment">// console.log(trheee)s</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/zebra/share/js/幸福小技巧.html">
+        幸福小技巧
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zebra/assets/js/app.34ae22a4.js" defer></script><script src="/zebra/assets/js/2.c6624801.js" defer></script><script src="/zebra/assets/js/9.a544c69d.js" defer></script>
+  </body>
+</html>
