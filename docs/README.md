@@ -12,5 +12,5 @@ features:
   details: 大斑马前端分享小屋。
 - title: 组件小屋
   details: 大斑马前端组件开发文档，制定了基本开发组件的使用方法。
-footer: MIT Licensed | Copyright © 2020-present Zebra
+footer: MIT Licensed | Copyright © 2020-present Zebra-c
 ---
